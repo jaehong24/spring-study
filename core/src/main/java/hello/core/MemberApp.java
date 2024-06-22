@@ -13,7 +13,10 @@ public class MemberApp {
 
         service.join(member);
 
+        Member findMember = service.findMember(1L);
+        System.out.println("new Member = " + member.getName());
+        System.out.println("findMember = " + findMember.getName());
 
-        
+
     }
 }
